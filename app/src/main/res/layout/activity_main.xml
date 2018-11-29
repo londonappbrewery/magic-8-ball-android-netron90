@@ -9,5 +9,42 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+    <TextView
+        android:id="@+id/textIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textIntro"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:id="@+id/barDeco"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/textIntro"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"></RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_eightBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ball1"
+        android:layout_below="@id/barDeco"
+        android:layout_above="@id/askButton"/>
+ <Button
+     android:id="@+id/askButton"
+     android:layout_width="150dp"
+     android:layout_height="60dp"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     android:text="@string/ask"
+     android:textColor="@color/colorWhite"
+     android:background="@color/colorButton"
+     android:layout_marginBottom="16dp"/>
 </RelativeLayout>
